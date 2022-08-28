@@ -1,10 +1,11 @@
-import './App.css';
+import Main from './pages/main/main';
+
+// import styles
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
-    </div>
+    <Main/>
   );
 }
 
