@@ -1,11 +1,9 @@
-import Main from './pages/main/main';
-
-// import styles
+import { Main } from '../src/component/main/Main'
 import './App.scss';
 
 function App() {
   return (
-    <Main/>
+    <Main />
   );
 }
 

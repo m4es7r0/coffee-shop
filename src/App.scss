@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
 * {
     font-family: 'Merienda', cursive;
 }
 
-.MuiContainer-root {
-    max-width: 1140px;
+.container {
+    width: 800px ;
+    padding: 0px 5px;
     margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
