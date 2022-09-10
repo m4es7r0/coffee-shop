@@ -22,3 +22,98 @@
     justify-content: center;
     align-items: center;
 }
+
+// main 
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+
+    &__main {
+        padding-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+.subtitle {
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+
+    color: #FFFFFF;
+
+    text-align: center;
+    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &__header {
+        font-weight: 700;
+    }
+
+    &__about {
+        color: #000;
+    }
+
+    &__our {
+        color: #000;
+        margin-bottom: 40px;
+    }
+}
+
+.beans-logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+
+    background-color: transparent;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    padding: 5px 42px;
+
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, .12);
+    }
+}
+
+.text-block {
+    margin: 5px auto 0px;
+    width: 590px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    &__item {
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.card-block {
+    gap: 70px;
+}
+
+// shop
+

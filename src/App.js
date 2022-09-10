@@ -1,10 +1,15 @@
-import { Main } from '../src/component/main/Main'
+import { Main } from '../src/pages/main/Main'
+import { Shop } from './pages/shop/Shop';
+
 import './App.scss';
 
 function App() {
   return (
-    <Main />
-  );
+    <>
+      {/* <Main /> */}
+      <Shop />
+    </>
+  )
 }
 
 export default App;

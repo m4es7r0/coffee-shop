@@ -1,5 +1,5 @@
-import { Header } from "../header/Header"
-import { MainCard } from "../card/MainCard"
+import { Header } from "../../components/header/Header"
+import { MainCard } from "../../components/card/MainCard"
 
 import coffeeBeansWhite from '../../img/items/beans-logo-white.svg'
 import coffeeBeans from '../../img/items/beans-logo.svg'
@@ -8,20 +8,20 @@ import prestoCoffee from '../../img/items/presto-coffee.svg'
 import aromisticoCoffee from '../../img/items/aromistico-coffee.svg'
 
 import './main.scss'
-import { Footer } from "../footer/Footer"
+import { Footer } from "../../components/footer/Footer"
 
 export const Main = () => {
     return (
         <>
-            <section className="section section__header">
-                <Header />
+            <section className="section section__header-main">
+                <Header title={'Everything You Love About Coffee'} titleMod=" title__main"/>
                 <div className="container flex-col">
                     <img className="beans-logo" src={coffeeBeansWhite} alt="coffee beans" />
                     <h2 className="subtitle subtitle__header">We makes every day full of energy and taste<br />Want to try our beans?</h2>
                     <button className="button button__main">More</button>
                 </div>
             </section>
-            <section className="section section__about">
+            <section className="section section__about-main">
                 <div className="container">
                     <h2 className="subtitle subtitle__about">About Us</h2>
                     <img className="beans-logo" src={coffeeBeans} alt="coffee beans" />
@@ -43,7 +43,7 @@ export const Main = () => {
                     </article>
                 </div>
             </section>
-            <section className="section section__our">
+            <section className="section section__our-main">
                 <div className="container">
                     <h2 className="subtitle subtitle__our">Our best</h2>
                     <div className="card-block flex-row">
