@@ -5,13 +5,20 @@
 }
 
 .container {
-    width: 800px ;
+    max-width: 800px ;
     padding: 0px 5px;
     margin: 0 auto;
 }
 
-.flex {
+.flex-col {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }

@@ -1,14 +1,21 @@
 import { Header } from "../header/Header"
-import './main.scss'
+import { MainCard } from "../card/MainCard"
+
 import coffeeBeansWhite from '../../img/items/beans-logo-white.svg'
 import coffeeBeans from '../../img/items/beans-logo.svg'
+import solimoCoffee from '../../img/items/solimo-coffee.svg'
+import prestoCoffee from '../../img/items/presto-coffee.svg'
+import aromisticoCoffee from '../../img/items/aromistico-coffee.svg'
+
+import './main.scss'
+import { Footer } from "../footer/Footer"
 
 export const Main = () => {
     return (
         <>
             <section className="section section__header">
                 <Header />
-                <div className="container flex">
+                <div className="container flex-col">
                     <img className="beans-logo" src={coffeeBeansWhite} alt="coffee beans" />
                     <h2 className="subtitle subtitle__header">We makes every day full of energy and taste<br />Want to try our beans?</h2>
                     <button className="button button__main">More</button>
@@ -36,6 +43,26 @@ export const Main = () => {
                     </article>
                 </div>
             </section>
+            <section className="section section__our">
+                <div className="container">
+                    <h2 className="subtitle subtitle__our">Our best</h2>
+                    <div className="card-block flex-row">
+                        <MainCard
+                            img={solimoCoffee} 
+                            title={'Solimo Coffee Beans 2 kg'} 
+                            price={'10.73'}/>
+                        <MainCard
+                            img={prestoCoffee} 
+                            title={'Presto Coffee Beans 1 kg'} 
+                            price={'15.99'}/>
+                        <MainCard
+                            img={aromisticoCoffee} 
+                            title={'AROMISTICO Coffee 1 kg'} 
+                            price={'6.99'}/>
+                    </div>
+                </div>
+            </section>
+            <Footer/>
         </>
     )
 }
