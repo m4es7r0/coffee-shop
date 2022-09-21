@@ -1,5 +1,5 @@
 import { Header } from "../../components/header/Header"
-import { MainCard } from "../../components/card/MainCard"
+import { Card } from "../../components/card/Card"
 
 import coffeeBeansWhite from '../../img/items/beans-logo-white.svg'
 import coffeeBeans from '../../img/items/beans-logo.svg'
@@ -14,7 +14,7 @@ export const Main = () => {
     return (
         <>
             <section className="section section__header-main">
-                <Header title={'Everything You Love About Coffee'} titleMod=" title__main"/>
+                <Header title={'Everything You Love About Coffee'} titleMod=" title__main" />
                 <div className="container flex-col">
                     <img className="beans-logo" src={coffeeBeansWhite} alt="coffee beans" />
                     <h2 className="subtitle subtitle__header">We makes every day full of energy and taste<br />Want to try our beans?</h2>
@@ -47,22 +47,22 @@ export const Main = () => {
                 <div className="container">
                     <h2 className="subtitle subtitle__our">Our best</h2>
                     <div className="card-block flex-row">
-                        <MainCard
-                            img={solimoCoffee} 
-                            title={'Solimo Coffee Beans 2 kg'} 
-                            price={'10.73'}/>
-                        <MainCard
-                            img={prestoCoffee} 
-                            title={'Presto Coffee Beans 1 kg'} 
-                            price={'15.99'}/>
-                        <MainCard
-                            img={aromisticoCoffee} 
-                            title={'AROMISTICO Coffee 1 kg'} 
-                            price={'6.99'}/>
+                        <Card
+                            img={solimoCoffee}
+                            title={'Solimo Coffee Beans 2 kg'}
+                            price={'10.73'} />
+                        <Card
+                            img={prestoCoffee}
+                            title={'Presto Coffee Beans 1 kg'}
+                            price={'15.99'} />
+                        <Card
+                            img={aromisticoCoffee}
+                            title={'AROMISTICO Coffee 1 kg'}
+                            price={'6.99'} />
                     </div>
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </>
     )
 }

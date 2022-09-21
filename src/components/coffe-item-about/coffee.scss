@@ -1,0 +1,44 @@
+.coffee {
+    margin-top: 70px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    &__image {
+        background: url('../../img/items/coffee-item-page/coffee-item.svg') center / cover no-repeat;
+        height: 355px;
+        width: 392px;
+        filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
+    }
+
+    &__about {
+        max-width: 345px;
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 35px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 16px;
+        }
+
+        span {
+            font-size: 24px;
+            line-height: 35px;
+
+            strong {
+                font-size: 14px;
+                line-height: 21px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+}

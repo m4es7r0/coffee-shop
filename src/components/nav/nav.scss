@@ -18,6 +18,10 @@
     gap: 40px;
     list-style: none;
 
+    &__link {
+        text-decoration: none;
+    }
+
     &__item {
         p {
             color: #fff;

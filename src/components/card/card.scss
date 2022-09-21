@@ -1,6 +1,7 @@
 .card {
     width: 220px;
-    height: 240px;
+    max-height: 260px;
+    min-height: 240px;
     justify-content: space-between;
 
     padding: 22px;
@@ -11,13 +12,26 @@
     &__header {
         height: 135px;
         justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
     }
 
     &__title {
         font-size: 13px;
         line-height: 20px;
+    }
 
-        margin-bottom: 10px;
+    &__from {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: end;
     }
 
     &__price {

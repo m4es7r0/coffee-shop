@@ -7,7 +7,6 @@ export const Footer = () => {
         <footer className="footer-container flex-col">
             <Nav className={'footer__nav'} color={'black'}/>
             <img src={coffeeBeans} alt="coffee beans" />
-
         </footer>
   )
 }
